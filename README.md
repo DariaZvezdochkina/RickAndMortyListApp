@@ -1,16 +1,31 @@
 # list_app
 
-A new Flutter project.
+Требовалось разработать приложение с экраном списка и экраном детальной информации для отображения данных, полученных через API.
 
-## Getting Started
+Основные функциональные требования
 
-This project is a starting point for a Flutter application.
+1.	Меню нижней навигации:
+·  	На главном экране приложения присутствует нижнее меню для навигации;
+·  	Меню содержит минимум два пункта;
+·  	Как минимум один из экранов должен отображать вертикальный список;
 
-A few resources to get you started if this is your first Flutter project:
+3.	Список:
+·  	Экран показывается на одной из вкладок на главном экране;
+·  	Содержит в себе список элементов, полученных через любое открытое API, в данном случае я использовала https://rickandmortyapi.com/api;
+·  	Нажатие на элемент списка должно инициировать переход на экран с детальной информацией.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4.	Детальная информация:
+·  	Экран показывается при нажатии на элемент списка на соответствующем экране;
+·  	Отображает детальную информацию об объекте из соответствующего элемента на экране списка;
+·  	Занимает все доступное пространство (нижнее меню здесь не отображается);
+·  	Присутствует кнопка для возврата к экрану списка.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5.	API:
+·  	Приложение должно обращаться к любому открытому API на выбор исполнителя;
+·  	Данные, полученные через API, должны загружаться асинхронно;
+·  	Должна быть предусмотрена обработка состояний загрузки (загрузка, успех, ошибка) и отображение соответствующих сообщений.
+
+
+<img width="308" alt="Screenshot 2023-07-14 at 17 13 43" src="https://github.com/DariaZvezdochkina/RickAndMortyListApp/assets/57398072/96ad686b-56e5-43da-8f6d-278f3cb221c8">
+<img width="307" alt="Screenshot 2023-07-14 at 17 13 58" src="https://github.com/DariaZvezdochkina/RickAndMortyListApp/assets/57398072/0e3e07ef-3fa4-4ad3-9505-43a51d276520">
+<img width="308" alt="Screenshot 2023-07-14 at 17 14 09" src="https://github.com/DariaZvezdochkina/RickAndMortyListApp/assets/57398072/47767d97-f420-4eb7-b651-27eb89263f4b">
